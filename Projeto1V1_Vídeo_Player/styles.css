@@ -1,0 +1,70 @@
+/* Centraliza o conteúdo da página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://img.freepik.com/fotos-premium/pacote-de-dados-realistas-de-fotos-fluindo-pela-internet-visto-do-espaco-generativo-de-ia_895799-18071.jpg'); /* Adiciona a imagem de fundo */
+    background-size: cover; /* A imagem ocupa toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+/* Contêiner do vídeo */
+.video-container {
+    text-align: center;
+    padding: 20px;
+    background-image:url('https://img.freepik.com/fotos-premium/pacote-de-dados-realistas-de-fotos-fluindo-pela-internet-visto-do-espaco-generativo-de-ia_895799-18071.jpg'); /* Fundo branco com leve transparência */
+    border-radius: 8px; /* Diminuímos a borda para 8px */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+}
+
+/* Estilos para os controles */
+.controls {
+    margin-top: 15px;
+}
+
+#play-pause {
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: rgb(52, 55, 55);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#play-pause:hover {
+    background-color: rgb(131, 214, 231);
+}
+
+/* Estilo para a barra de progresso */
+input[type="range"] {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Estilo para o seletor de arquivo */
+.file-selector {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.file-label {
+    background: rgb(131, 214, 231); /* Cor verde para o botão, combinando bem com o azul do player */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.file-label:hover {
+    background: #7df38d; /* Tom mais escuro de verde ao passar o mouse */
+}
+
+#file-input {
+    display: none; /* Esconde o input de arquivo */
+}
